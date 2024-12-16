@@ -6,6 +6,7 @@ import Calculator from "./pages/Calculator.js";
 import SignUp from "./pages/SignUp.js";
 import SignIn from "./pages/SignIn.js";
 import VerifyEmail from "./pages/VerifyEmail.js";
+import BlogDetail from "./components/BlogDetail.js";
 import './App.css';
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/calculator" element={<Calculator />}/>
         <Route path="/signup" element={<SignUp />}/>
         <Route path="/signin" element={<SignIn />}/>
+        <Route path="/blogs/:blogId" element={<BlogDetail />}/>
         <Route path="/verifyemail/:username" element={<VerifyEmail />} />
       </Routes>
   );
