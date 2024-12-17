@@ -31,10 +31,10 @@ export default function BlogListingTop() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+          <h2 className="text-pretty text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
             From the blog
           </h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
+          <p className="mt-2 text-lg leading-8 text-lime-700">
             Learn how to grow your business with our expert advice.
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function BlogListingTop() {
                 </time>
                 <Link
                   to={`/blogs/${blog.blogId}`} // Client-side routing with Link
-                  className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                  className="relative z-10 rounded-full bg-lime-300 px-3 py-1.5 font-medium text-slate-700 hover:bg-slate-100"
                 >
                   {blog.category}
                 </Link>
@@ -72,7 +72,7 @@ export default function BlogListingTop() {
                   <p className="font-semibold text-gray-900">
                     {blog.author}
                   </p>
-                  <p className="text-gray-600">{blog.role}</p>
+                  <p className="text-lime-800">{blog.role}</p>
                 </div>
               </div>
             </article>
