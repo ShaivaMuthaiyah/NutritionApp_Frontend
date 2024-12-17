@@ -49,7 +49,7 @@ export default function BlogDetail() {
         {/* Author and Date */}
         <div className="mt-16 flex justify-between items-center border-t border-gray-200 pt-6">
           <div>
-            <p className="text-base font-medium text-gray-900">Written by: {blog.author.name}</p>
+            <p className="text-base font-medium text-gray-900">Written by: {blog.author}</p>
             <p className="text-sm text-gray-600">Published on: {blog.date}</p>
           </div>
         </div>
