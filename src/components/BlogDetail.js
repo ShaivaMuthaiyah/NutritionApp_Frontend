@@ -13,7 +13,7 @@ export default function BlogDetail() {
   useEffect(() => {
     async function fetchBlog() {
       try {
-        const response = await fetch(`${API_URL}/api/blogs/title/${blogId}`); // Adjust URL for production
+        const response = await fetch(`${API_URL}/api/blogs/${blogId}`); // Adjust URL for production
         if (!response.ok) throw new Error('Failed to fetch blog');
         const data = await response.json();
         setBlog(data);
