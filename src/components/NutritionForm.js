@@ -128,7 +128,7 @@ export default function NutritionForm({ setNutritionData }) {
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-pretty text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">Nutrition Calculator</h2>
             <p className="mt-2 text-lg leading-8 text-lime-700">
-              Enter your details here to receive a a meal plan.
+              Enter your details here to receive a customised meal plan.
             </p>
           </div>
                 <form onSubmit={handleSubmit}>
