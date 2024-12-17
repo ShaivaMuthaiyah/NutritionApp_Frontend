@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const API_URL = "http://localhost";
 
@@ -47,20 +48,20 @@ export default function BlogListingTop() {
                 <time dateTime={blog.date} className="text-gray-500">
                   {blog.date}
                 </time>
-                <a
-                  href={`/blogs/${blog.BlogId}`} // Use dynamic link for each blog
+                <Link
+                  to={`/blogs/${blog.BlogId}`} // Client-side routing with Link
                   className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
                 >
                   {blog.category}
-                </a>
+                </Link>
               </div>
               <div className="group relative">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <a href={`/blogs/${blog.Blogid}`}>
-                    {/* Adjust link */}
+                <Link to={`/blogs/${blog.BlogId}`}>
+                    {/* Use consistent BlogId */}
                     <span className="absolute inset-0" />
                     {blog.title}
-                  </a>
+                  </Link>
                 </h3>
                 <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
                   {blog.description}
