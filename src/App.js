@@ -7,6 +7,7 @@ import SignUp from "./pages/SignUp.js";
 import SignIn from "./pages/SignIn.js";
 import VerifyEmail from "./pages/VerifyEmail.js";
 import BlogDetail from "./components/BlogDetail.js";
+import HealthCheck from "./pages/HealthCheck.js"
 import './App.css';
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/signin" element={<SignIn />}/>
         <Route path="/blogs/:blogId" element={<BlogDetail />}/>
         <Route path="/verifyemail/:username" element={<VerifyEmail />} />
+        <Route path="/healthz" element={<HealthCheck />} />
       </Routes>
   );
 }
