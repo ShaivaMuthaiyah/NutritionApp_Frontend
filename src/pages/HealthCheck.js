@@ -1,5 +1,5 @@
 import React from "react";
 
-const HealthCheck = () => {
+export default function HealthCheck() {
   return <div>OK</div>; // 
 };
