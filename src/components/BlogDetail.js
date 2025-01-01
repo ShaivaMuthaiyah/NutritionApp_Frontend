@@ -1,8 +1,7 @@
-
+import API_URL from '../services/appConfig';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
-const API_URL = "http://localhost"
 
 export default function BlogDetail() {
   const { blogId } = useParams();
@@ -13,7 +12,8 @@ export default function BlogDetail() {
   useEffect(() => {
     async function fetchBlog() {
       try {
-        const response = await fetch(`${API_URL}/api/blogs/${blogId}`); // Adjust URL for production
+        // const response = await fetch(`${API_URL}/api/blogs/${blogId}`); // Adjust URL for production
+        const response = await fetch(`${API_URL}/blogs/${blogId}`);
         if (!response.ok) throw new Error('Failed to fetch blog');
         const data = await response.json();
         setBlog(data);

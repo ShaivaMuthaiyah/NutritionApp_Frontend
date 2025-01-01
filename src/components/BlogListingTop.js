@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import API_URL from '../services/appConfig';
 
-const API_URL = "http://localhost";
 
 export default function BlogListingTop() {
   const [blogs, setBlogs] = useState([]);
@@ -11,7 +11,8 @@ export default function BlogListingTop() {
   useEffect(() => {
     async function fetchBlogs() {
       try {
-        const response = await fetch(`${API_URL}/api/blogs`);
+        // const response = await fetch(`${API_URL}/api/blogs`);
+        const response = await fetch(`${API_URL}/blogs`);
         if (!response.ok) throw new Error("Failed to fetch blogs");
         const data = await response.json();
         setBlogs(data);

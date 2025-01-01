@@ -5,10 +5,8 @@ import FiberNeedsChart from "./FiberNeedsChart";
 import WeightChart from "./WeightChart";
 import FatPercentageChart from "./FatPercentChart";
 import React from 'react';
+import API_URL from '../services/appConfig';
 
-
-
-const API_URL = "http://localhost";
 
 export default function NutritionReport({ nutritionData }) {
 
@@ -24,7 +22,8 @@ export default function NutritionReport({ nutritionData }) {
 
       // Send the request to the endpoint with the report_id in the URL
         try {
-            const response = await fetch(`${API_URL}/api/download_report/${reportId}`, {
+            // const response = await fetch(`${API_URL}/api/download_report/${reportId}`, {
+              const response = await fetch(`${API_URL}/download_report/${reportId}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',  // Not necessary for GET, but safe to include
@@ -37,7 +36,8 @@ export default function NutritionReport({ nutritionData }) {
 
                  // Create a temporary <a> element for triggering the download
                 const a = document.createElement('a');
-                a.href = `${API_URL}/api/download_report/${reportId}`;
+                // a.href = `${API_URL}/api/download_report/${reportId}`;
+                a.href = `${API_URL}/download_report/${reportId}`;
                 a.download = `nutrition_report_${reportId}.pdf`;  // Optionally specify the filename for download
                 a.style.display = 'none';  // Hide the element
 

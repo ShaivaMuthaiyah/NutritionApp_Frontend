@@ -1,7 +1,7 @@
+import API_URL from '../services/appConfig';
+
 
 import { useState } from 'react';
-
-const API_URL = "http://localhost";
 
 export default function NutritionForm({ setNutritionData }) {
 
@@ -97,6 +97,7 @@ export default function NutritionForm({ setNutritionData }) {
     
     // Send the form data to the endpoint
     try {
+        // const response = await fetch(`${API_URL}/calculate`, {
         const response = await fetch(`${API_URL}/calculate`, {
           method: 'POST',
           headers: {
