@@ -1,4 +1,5 @@
 import API_URL from '../services/appConfig';
+import BUCKET_URL from '../services/appConfig';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import defaultImage from "../images/default_image.jpg"
@@ -47,7 +48,7 @@ export default function BlogDetail() {
          <img
           src={
               blog.imageSrc || 
-              `https://nutritionappshaiva.s3.ap-south-1.amazonaws.com/images/${blog.blogId}.jpg` ||
+              `${BUCKET_URL}images/${blog.blogId}.jpg` ||
               defaultImage
             }
             alt={blog.title || "Default Image"}
