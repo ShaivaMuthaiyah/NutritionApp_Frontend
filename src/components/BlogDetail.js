@@ -17,6 +17,7 @@ export default function BlogDetail() {
         const response = await fetch(`${API_URL}/blogs/${blogId}`);
         if (!response.ok) throw new Error('Failed to fetch blog');
         const data = await response.json();
+        console.log(data);
         setBlog(data);
       } catch (err) {
         setError(err.message);
@@ -44,15 +45,9 @@ export default function BlogDetail() {
          {/* Blog Image */}
          <div className="mb-6">
           <img
-            src={blog.imgSrc || defaultImage}
-            alt={blog.title}
-            style={{
-              width: '40%',
-              height: 'auto',
-              margin: '0 auto',
-              display: 'block',
-              objectFit: 'contain',
-            }}
+              src={blog.imgSrc || defaultImage}
+              alt={blog.title || "Default"}
+              className="w-2/5 mx-auto object-contain"
           />
           </div>
         {/* Blog Content */}
