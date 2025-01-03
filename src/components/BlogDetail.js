@@ -44,11 +44,15 @@ export default function BlogDetail() {
         </div>
          {/* Blog Image */}
          <div className="mb-6">
-          <img
-              src={blog.imgSrc || defaultImage}
-              alt={blog.title || "Default"}
-              className="w-2/5 mx-auto object-contain"
-          />
+         <img
+          src={
+              blog.imageSrc || 
+              `https://nutritionappshaiva.s3.ap-south-1.amazonaws.com/images/${blog.blogId}.jpg` ||
+              defaultImage
+            }
+            alt={blog.title || "Default Image"}
+            className="w-2/5 mx-auto block object-contain"
+        />
           </div>
         {/* Blog Content */}
         <div className="mt-10 border-t border-gray-200 pt-10 lg:text-center">
