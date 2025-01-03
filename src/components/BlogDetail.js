@@ -1,7 +1,7 @@
 import API_URL from '../services/appConfig';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import defaultImage from `./assets/default_image.jpg`
+import defaultImage from "../images/default_image.jpg"
 
 
 export default function BlogDetail() {
