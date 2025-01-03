@@ -1,6 +1,7 @@
 import API_URL from '../services/appConfig';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import defaultImage from `./assets/default_image.jpg`
 
 
 export default function BlogDetail() {
@@ -40,6 +41,20 @@ export default function BlogDetail() {
           </p>
           <p className="mt-6 text-lg text-gray-600">{blog.description}</p>
         </div>
+         {/* Blog Image */}
+         <div className="mb-6">
+          <img
+            src={blog.imgSrc || defaultImage}
+            alt={blog.title}
+            style={{
+              width: '40%',
+              height: 'auto',
+              margin: '0 auto',
+              display: 'block',
+              objectFit: 'contain',
+            }}
+          />
+          </div>
         {/* Blog Content */}
         <div className="mt-10 border-t border-gray-200 pt-10 lg:text-center">
           <div className="prose prose-lg mx-auto text-gray-600">
