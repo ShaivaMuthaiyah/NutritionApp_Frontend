@@ -1,7 +1,7 @@
 
 
 
-# Use a lightweight Node image to build the React app
+# lightweight Node image to build the React app
 FROM node:alpine AS build
 
 # Add curl to the image 
