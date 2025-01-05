@@ -10,7 +10,7 @@ export default function BlogDetail() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const { API_URL, REACT_APP_BUCKET_URL } = config;
-  const imageUrl = `${REACT_APP_BUCKET_URL}images/${blog.blogId}.jpg`;
+  const imageUrl = `${REACT_APP_BUCKET_URL}images/${blogId}.jpg`;
   console.log('Image url:', imageUrl);
 
   useEffect(() => {
