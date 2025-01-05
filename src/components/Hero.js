@@ -44,7 +44,7 @@ const links = [
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Welcome to the CookSmart</h2>
+            <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Welcome to CookSmart</h2>
             <p className="mt-8 text-pretty text-lg font-medium text-slate-200 sm:text-xl/8">
             Discover personalized recipes tailored just for you! Simply enter your details and watch the magic happen. 
             Give our nutrition calculator a try today!
