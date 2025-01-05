@@ -23,14 +23,15 @@ COPY . .
 # ARG REACT_APP_API_URL
 # ENV REACT_APP_API_URL=$REACT_APP_API_URL
 
-ARG BUCKET_URL
-ENV BUCKET_URL=$BUCKET_URL
-
 # Build the app
 RUN npm run build
 
 # Use an nginx server to serve the static files
 FROM nginx:alpine
+
+
+ARG BUCKET_URL
+ENV BUCKET_URL=$BUCKET_URL
 
 # Copy the React build output to nginx's web directory
 COPY --from=build /app/build /usr/share/nginx/html
