@@ -9,7 +9,7 @@ export default function BlogDetail() {
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const { API_URL, BUCKET_URL } = config;
+  const { API_URL, REACT_APP_BUCKET_URL } = config;
 
   useEffect(() => {
     async function fetchBlog() {
@@ -49,7 +49,7 @@ export default function BlogDetail() {
          <img
           src={
               blog.imageSrc ||
-              `${BUCKET_URL}images/${blog.blogId}.jpg` ||
+              `${REACT_APP_BUCKET_URL}images/${blog.blogId}.jpg` ||
               defaultImage
             }
             alt={blog.title || "Default Image"}
