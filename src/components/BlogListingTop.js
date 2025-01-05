@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { API_URL } from "../services/appConfig";
+import { API_URL, BUCKET_URL } from "../services/appConfig";
 
 
 export default function BlogListingTop() {

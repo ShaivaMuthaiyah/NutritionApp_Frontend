@@ -5,7 +5,7 @@ import FiberNeedsChart from "./FiberNeedsChart";
 import WeightChart from "./WeightChart";
 import FatPercentageChart from "./FatPercentChart";
 import React from 'react';
-import API_URL from '../services/appConfig';
+import { API_URL, BUCKET_URL } from '../services/appConfig';
 
 
 export default function NutritionReport({ nutritionData }) {
