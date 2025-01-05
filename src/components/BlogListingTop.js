@@ -14,6 +14,7 @@ export default function BlogListingTop() {
     async function fetchBlogs() {
       try {
         // const response = await fetch(`${API_URL}/api/blogs`);
+        console.log("Fetching from:", `${API_URL}/blogs`);
         const response = await fetch(`${API_URL}/blogs`);
         if (!response.ok) throw new Error("Failed to fetch blogs");
         const data = await response.json();
