@@ -55,7 +55,7 @@ export default function BlogDetail() {
               defaultImage
             }
             alt={blog.title || "Default Image"}
-            className="w-2/5 mx-auto block object-contain"
+            className="w-full sm:w-2/5 mx-auto block object-contain sm:w-4/5"
         />
           </div>
         {/* Blog Content */}
