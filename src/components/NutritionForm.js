@@ -98,6 +98,7 @@ export default function NutritionForm({ setNutritionData }) {
     // Send the form data to the endpoint
     try {
         // const response = await fetch(`${API_URL}/calculate`, {
+        console.log(API_URL);
         const response = await fetch(`${API_URL}/calculate`, {
           method: 'POST',
           headers: {
