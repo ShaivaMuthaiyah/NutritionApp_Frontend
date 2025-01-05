@@ -15,7 +15,8 @@ export default function BlogListingTop() {
       try {
         // const response = await fetch(`${API_URL}/api/blogs`);
         console.log("Fetching from:", `${API_URL}/blogs`);
-        const response = await fetch(`${API_URL}/blogs`);
+        // const response = await fetch(`${API_URL}/blogs`);
+        const response = await fetch("http://flask-backend.nutrition.svc.cluster.local/api/blogs");
         if (!response.ok) throw new Error("Failed to fetch blogs");
         const data = await response.json();
         setBlogs(data);
