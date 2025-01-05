@@ -18,7 +18,7 @@ export default function BlogDetail() {
         const response = await fetch(`${API_URL}/blogs/${blogId}`);
         if (!response.ok) throw new Error('Failed to fetch blog');
         const data = await response.json();
-        console.log('BUCKET_URL:', BUCKET_URL);
+        console.log('BUCKET_URL:', REACT_APP_BUCKET_URL);
         // console.log(data);
         setBlog(data);
       } catch (err) {
