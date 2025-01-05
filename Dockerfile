@@ -23,6 +23,12 @@ COPY . .
 # ARG REACT_APP_API_URL
 # ENV REACT_APP_API_URL=$REACT_APP_API_URL
 
+
+
+ARG REACT_APP_BUCKET_URL
+ENV REACT_APP_BUCKET_URL=$REACT_APP_BUCKET_URL
+
+
 # Build the app
 RUN npm run build
 
@@ -30,8 +36,6 @@ RUN npm run build
 FROM nginx:alpine
 
 
-ARG REACT_APP_BUCKET_URL
-ENV REACT_APP_BUCKET_URL=$REACT_APP_BUCKET_URL
 
 # Copy the React build output to nginx's web directory
 COPY --from=build /app/build /usr/share/nginx/html
