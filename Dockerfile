@@ -30,8 +30,8 @@ RUN npm run build
 FROM nginx:alpine
 
 
-ARG BUCKET_URL
-ENV BUCKET_URL=$BUCKET_URL
+ARG REACT_APP_BUCKET_URL
+ENV REACT_APP_BUCKET_URL=$REACT_APP_BUCKET_URL
 
 # Copy the React build output to nginx's web directory
 COPY --from=build /app/build /usr/share/nginx/html
