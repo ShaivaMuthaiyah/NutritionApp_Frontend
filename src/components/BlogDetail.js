@@ -21,7 +21,7 @@ export default function BlogDetail() {
         if (!response.ok) throw new Error('Failed to fetch blog');
         const data = await response.json();
         console.log('BUCKET_URL:', BUCKET_URL);
-        console.log(data);
+        // console.log(data);
         setBlog(data);
       } catch (err) {
         setError(err.message);
