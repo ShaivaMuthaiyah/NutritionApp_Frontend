@@ -1,9 +1,12 @@
-import API_URL from '../services/appConfig';
+import config from "../services/appConfig";
+
 
 
 import { useState } from 'react';
 
 export default function NutritionForm({ setNutritionData }) {
+
+    const { API_URL, BUCKET_URL } = config;
 
     const [formData, setFormData] = useState({
         age: '',

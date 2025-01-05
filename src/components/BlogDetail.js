@@ -1,5 +1,6 @@
-import API_URL from '../services/appConfig';
-import BUCKET_URL from '../services/appConfig';
+import config from "../services/appConfig";
+
+
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import defaultImage from "../images/default_image.jpg"
@@ -10,6 +11,7 @@ export default function BlogDetail() {
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { API_URL, BUCKET_URL } = config;
 
   useEffect(() => {
     async function fetchBlog() {

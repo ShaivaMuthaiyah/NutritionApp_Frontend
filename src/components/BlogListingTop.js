@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { API_URL, BUCKET_URL } from "../services/appConfig";
+import config from "../services/appConfig";
+
 
 
 export default function BlogListingTop() {
+  const { API_URL, BUCKET_URL } = config;
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
