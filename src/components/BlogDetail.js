@@ -50,9 +50,9 @@ export default function BlogDetail() {
          <div className="mb-6">
          <img
           src={
-              blog.imageSrc 
+              blog.imageSrc ||
               // `${BUCKET_URL}images/${blog.blogId}.jpg` ||
-              // defaultImage
+              defaultImage
             }
             alt={blog.title || "Default Image"}
             className="w-2/5 mx-auto block object-contain"
