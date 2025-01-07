@@ -95,7 +95,7 @@ export default function NutritionForm({ setNutritionData }) {
             goal: formData.goal,
           };
           // Alert the data object for troubleshooting
-        alert(JSON.stringify(data, null, 2));
+        // alert(JSON.stringify(data, null, 2));
 
     
     // Send the form data to the endpoint
@@ -114,7 +114,9 @@ export default function NutritionForm({ setNutritionData }) {
           console.log('Data submitted successfully');
           const data = await response.json();
 
-          alert(JSON.stringify(data, null, 2));
+          // Data alert for troubleshooting
+
+          // alert(JSON.stringify(data, null, 2));
           setNutritionData(data);
           
         } else {
