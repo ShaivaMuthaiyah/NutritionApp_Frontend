@@ -1,7 +1,7 @@
 import { Disclosure, Menu } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useLocation, Link } from 'react-router-dom';
-import icon from '../images/icons8-brezel-50.png'
+import icon from '../images/pretzel.png'
 
 const navigation = [
   { name: 'Home', href: '/' },
