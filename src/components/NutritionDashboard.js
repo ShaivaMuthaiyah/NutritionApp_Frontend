@@ -121,9 +121,10 @@ export default function NutritionDashboard({ data }) {
           </div>
         ))}
       </div>
-
+        
       <div className="bg-white shadow-lg rounded-lg p-4 mt-10">
         <h2 className="text-xl font-semibold mb-4">Nutritional Summary</h2>
+        <div className="overflow-x-auto">
         <table className="w-full border border-gray-300">
           <thead className="bg-slate-700 text-slate-50">
             <tr>
@@ -202,6 +203,7 @@ export default function NutritionDashboard({ data }) {
             
           </tbody>
         </table>
+        </div>
       </div>
     </div>
   );
