@@ -47,7 +47,7 @@ export default function BlogDetail() {
           <p className="mt-6 text-lg text-gray-600">{blog.description}</p>
         </div>
          {/* Blog Image */}
-         <div className="mb-6">
+         <div className="mb-6 mt-3">
          <img
           src={
               blog.imageSrc ||
