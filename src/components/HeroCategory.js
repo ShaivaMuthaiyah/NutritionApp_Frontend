@@ -8,21 +8,21 @@ const callouts = [
       description: 'Work from home accessories',
       imageSrc: image1,
       imageAlt: 'https://unsplash.com/photos/a-plate-of-food-on-a-table-next-to-a-bowl-of-sauce-4T-KTP5rWfQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash',
-      href: '#',
+      href: '/blogs/BLOG67890',
     },
     {
       name: 'Fruit and Waffles',
       description: 'Journals and note-taking',
       imageSrc: image2,
       imageAlt: 'https://unsplash.com/photos/waffle-with-strawberry-and-creme-NM1eTOwEz7A?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash',
-      href: '#',
+      href: '/blogs/BLOG78901',
     },
     {
-      name: 'Travel',
+      name: 'Benefits of the green',
       description: 'Vegetable Bowl',
       imageSrc: image3,
       imageAlt: 'https://unsplash.com/photos/top-view-salad-with-guacamole-oaz0raysASk?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash',
-      href: '#',
+      href: '/blogs/BLOG89012',
     },
   ]
   
