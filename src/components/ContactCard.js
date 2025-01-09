@@ -11,7 +11,7 @@ function ContactCard() {
 
 
     return (
-        <section class="py-24">
+        <section class="py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="md:flex gap-x-24 clear-left md:mb-16 mb-10">
               <div class=" md:mb-0 mb-4">
