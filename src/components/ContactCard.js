@@ -22,11 +22,11 @@ function ContactCard() {
               </div>
               <div class="border-l-2 md:border-lime-700 border-white px-10 py-6">
                   <div class="mb-8">
-                      <h6 class="text-gray-500 text-sm font-medium leading-5 pb-3 md:text-start text-center">Email Address</h6>
+                      <h6 class="text-lime-500 text-sm font-medium leading-5 pb-3 md:text-start text-center">Email Address</h6>
                       <h3 class="text-black text-xl font-semibold leading-8 md:text-start text-center">ShaivaMuthaiya@gmail.com</h3>
                   </div>
                   <div>
-                      <h6 class="text-gray-500 text-sm font-medium leading-5 pb-3 md:text-start text-center">Phone Number</h6>
+                      <h6 class="text-lime-500 text-sm font-medium leading-5 pb-3 md:text-start text-center">Phone Number</h6>
                       <h3 class="text-black text-xl font-semibold leading-8 md:text-start text-center">+91-7259975877</h3>
                   </div>
               </div>
