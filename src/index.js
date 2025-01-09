@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "@material-tailwind/react";
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UserProvider from './services/UserContext'
@@ -18,6 +19,7 @@ root.render(
     <ThemeProvider>
     <Navbar/>
     <App />
+    <Footer/>
     </ThemeProvider>
     </BrowserRouter>
     </UserProvider>

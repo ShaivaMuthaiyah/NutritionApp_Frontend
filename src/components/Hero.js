@@ -4,8 +4,8 @@ const links = [
     { name: 'Try the calculator now', href: '/calculator' },
   ]
   const stats = [
-    { name: 'Offices worldwide', value: '12' },
-    { name: 'Recipes to choose from', value: '500+' },
+    { name: 'Metrics Analyzed', value: '6+' },
+    { name: 'Recipes to choose from', value: '1000+' },
     { name: 'Allergens to exclude', value: '4+' },
     { name: 'Dietary preferences', value: '3+' },
   ]
