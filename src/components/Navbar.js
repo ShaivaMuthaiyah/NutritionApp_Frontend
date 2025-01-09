@@ -40,7 +40,7 @@ export default function Navbar() {
               <img
                 alt="Your Company"
                 src={icon}
-                className="h-8 w-auto"
+                className="h-9 w-auto"
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">
