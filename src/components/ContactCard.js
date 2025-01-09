@@ -18,7 +18,7 @@ function ContactCard() {
                   <h2 class="text-pretty text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl md:text-left text-center">Get In Touch</h2>
                   <p class="text-lime-700 text-lg font-normal leading-7 mb-7 md:text-left text-center">Whether you have a concern or simply want to say hello, We are here for you.</p>
                   <div class="flex md:items-center md:justify-start justify-center">
-                      <button class="w-36 h-12 rounded-lg bg-slate-900 duration-700py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Contact Us</button>
+                      <button class="w-36 h-12 rounded-lg bg-slate-900 duration-700py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"><a href="mailto:shaivamuthaiyah@gmail.com?subject=Enquiry%20CookSmart">Contact Us</a></button>
                   </div>
               </div>
               <div class="border-l-2 md:border-lime-700 border-white px-10 py-6">
