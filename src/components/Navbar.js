@@ -7,6 +7,7 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Nutrition Calculator', href: '/calculator' },
   { name: 'Blogs', href: '/blogs' },
+  { name: 'Contact', href: '/contact' }
   // { name: 'Pending', href: '#' },
 ];
 

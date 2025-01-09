@@ -8,6 +8,7 @@ import SignIn from "./pages/SignIn.js";
 import VerifyEmail from "./pages/VerifyEmail.js";
 import BlogDetail from "./components/BlogDetail.js";
 import HealthCheck from "./pages/HealthCheck.js"
+import Contact from "./pages/Contact.js";
 import './App.css';
 
 
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/blogs" element={<BlogListing />}/>
+        <Route path="/contact" element={<Contact />}/>
         <Route path="/calculator" element={<Calculator />}/>
         <Route path="/signup" element={<SignUp />}/>
         <Route path="/signin" element={<SignIn />}/>
