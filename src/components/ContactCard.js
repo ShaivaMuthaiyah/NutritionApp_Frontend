@@ -9,7 +9,6 @@ import image4 from '../images/contact_4.jpg';
 
 function ContactCard() {
 
-
     return (
         <section class="py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -35,34 +34,30 @@ function ContactCard() {
           <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
               <div class="h-96 relative flex justify-center">
                   <div class="w-full h-full absolute bg-gradient-to-t from-gray-800/50 to-gray-600/50"></div>
-                  <img src={image1} alt="United Kingdom image" class="w-full h-full object-cover"/>
+                  <img src={image1} alt="Hearty Fruit Bowls" class="w-full h-full object-cover"/>
                   <div class="absolute bottom-0 mb-6 text-center px-6">
                       <h5 class="text-white text-lg font-semibold leading-7 mb-2">Hearty Fruit Bowls</h5>
-                      <p class="text-white text-base font-medium leading-6">123 High Street, Westminster, London</p>
                   </div>
               </div>
               <div class="h-96 relative flex justify-center">
                   <div class="w-full h-full absolute bg-gradient-to-t from-gray-800/50 to-gray-600/50"></div>
-                  <img src={image2} alt="Germany image" class="w-full h-full  object-cover"/>
+                  <img src={image2} alt="Basil Burgers" class="w-full h-full  object-cover"/>
                   <div class="absolute bottom-0 mb-6 text-center px-6">
                       <h5 class="text-white text-lg font-semibold leading-7 mb-2">Basil Burgers</h5>
-                      <p class="text-white text-base font-medium leading-6">101 Unter den Linden, Mitte <br/>District, Berlin</p>
                   </div>
               </div>
               <div class="h-96 relative flex justify-center">
                   <div class="w-full h-full absolute bg-gradient-to-t from-gray-800/50 to-gray-600/50"></div>
-                  <img src={image3} alt="France image" class="w-full h-full  object-cover"/>
+                  <img src={image3} alt="White Sauce Fish" class="w-full h-full  object-cover"/>
                   <div class="absolute bottom-0 mb-6 text-center px-6">
                       <h5 class="text-white text-lg font-semibold leading-7 mb-2">White Sauce Fish</h5>
-                      <p class="text-white text-base font-medium leading-6">456 Rue de la Paix, 8th Arrondissement, Paris</p>
                   </div>
               </div>
               <div class="h-96 relative flex justify-center">
                   <div class="w-full h-full absolute bg-gradient-to-t from-gray-800/50 to-gray-600/50"></div>
-                  <img src={image4} alt="Switzerland image" class="w-full h-full  object-cover"/>
+                  <img src={image4} alt="Mixed Seafood" class="w-full h-full  object-cover"/>
                   <div class="absolute bottom-0 mb-6 text-center px-6">
                       <h5 class="text-white text-lg font-semibold leading-7 mb-2">Mixed Seafood</h5>
-                      <p class="text-white text-base font-medium leading-6">987 Bahnhofstrasse, Zurich <br/> City Center, Zurich</p>
                   </div>
               </div>
           </div>
