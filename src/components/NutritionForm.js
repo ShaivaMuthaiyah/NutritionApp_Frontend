@@ -19,7 +19,7 @@ export default function NutritionForm({ setNutritionData }) {
         goal: "maintain_weight",
       });
 
-      const allergyOptions = ["Fish", "Shellfish", "Pork", "Chicken", "Beef", "None"];
+      const allergyOptions = ["Fish", "Shellfish", "Pork", "Chicken", "Beef", "Lamb", "None"];
 
     // Handle input changes to update form data
     const handleChange = (e) => {
@@ -285,11 +285,11 @@ export default function NutritionForm({ setNutritionData }) {
                             onChange={handleChange}
                             className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-lime-700 sm:text-sm sm:leading-6"
                             >
-                            <option value="sedentary">Sedentary</option>
-                            <option value="lightly_active">Lightly Active</option>
-                            <option value="moderately_active">Moderately Active</option>
-                            <option value="very_active">Very Active</option>
-                            <option value="extra_active">Extra Active</option>
+                            <option value="sedentary">Sedentary (Little or no exercise, less than 1 day/week)</option>
+                            <option value="lightly_active">Lightly Active (Light exercise/sports 1-3 days/week)</option>
+                            <option value="moderately_active">Moderately Active (Moderate exercise/sports 3-5 days/week)</option>
+                            <option value="very_active">Very Active (Intense exercise/sports 6-7 days/week)</option>
+                            <option value="extra_active">Extra Active (Very intense exercise, physical job, or double workouts daily)</option>
                             </select>
                         </div>
                         </div>
